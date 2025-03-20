@@ -3224,7 +3224,7 @@ resource "aws_s3_bucket_acl" "bucket_upload" {
   ]
 
   bucket = aws_s3_bucket.bucket_upload.id
-  acl    = "private"
+  acl    = "public-read"
 }
 
 resource "aws_s3_bucket_policy" "allow_access_for_prod" {
